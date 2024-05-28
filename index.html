@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptation.css">
+    <link rel="stylesheet" href="javascript.js">
+
+    
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <script src="javascript.js"></script>
+
+    <title>Portfolio</title>
+
+</head>
+<body>
+    <div id="first-page"></div>
+    <div class="first-page" >
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#4B81AB">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li><a href="#first-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22" fill="grey"/>
+                    </svg>Home</a></li>
+                <li><a href="#second-page"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="grey"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                    </svg>About me</a></li>
+                <li><a href="#third-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.78 2.20001L24 6.42001L8.44 22L0 13.55L4.22 9.33001L8.44 13.55L19.78 2.20001ZM19.78 5.00001L8.44 16.36L4.22 12.19L2.81 13.55L8.44 19.17L21.19 6.42001L19.78 5.00001Z" fill="grey"/>
+                    </svg>Goat</a></li>
+                <li><a href="#"><svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0C15.1 0 14 1 14 2H6C6 1 4.9 0 4 0H0V9C0 10 1 11 2 11H4.2C4.6 13 5.9 14.7 9 15V17.08C6 17.54 6 20 6 20H14C14 20 14 17.54 11 17.08V15C14.1 14.7 15.4 13 15.8 11H18C19 11 20 10 20 9V0H16ZM4 9H2V2H4V9ZM14 9.5C14 11.43 13.42 13 10 13C6.59 13 6 11.43 6 9.5V4H14V9.5ZM18 9H16V2H18V9Z" fill="grey"/>
+                    </svg>Achievement</a></li>
+                <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.9924 12.0224C23.9912 10.7623 23.7023 9.52628 23.1568 8.44706C22.6112 7.36784 21.8296 6.48612 20.8958 5.89648C20.874 4.67329 20.5393 3.48726 19.9365 2.4973C19.3337 1.50734 18.4916 0.760761 17.523 0.357598C16.5544 -0.0455656 15.5057 -0.0860483 14.5173 0.241575C13.5289 0.569198 12.648 1.24927 11.9928 2.19067C11.3376 1.24927 10.4567 0.569198 9.46834 0.241575C8.47993 -0.0860483 7.43117 -0.0455656 6.4626 0.357598C5.49403 0.760761 4.65192 1.50734 4.04911 2.4973C3.4463 3.48726 3.11159 4.67329 3.08985 5.89648C2.15505 6.48452 1.37255 7.36569 0.826724 8.44501C0.280895 9.52433 -0.00756836 10.7608 -0.00756836 12.0213C-0.00756836 13.2817 0.280895 14.5182 0.826724 15.5975C1.37255 16.6769 2.15505 17.558 3.08985 18.1461C3.11121 19.3694 3.44564 20.5558 4.04831 21.5461C4.65097 22.5364 5.49307 23.2834 6.46172 23.6868C7.43038 24.0903 8.47929 24.1309 9.46788 23.8034C10.4565 23.4758 11.3375 22.7957 11.9928 21.8542C12.6481 22.7957 13.5291 23.4758 14.5177 23.8034C15.5063 24.1309 16.5552 24.0903 17.5239 23.6868C18.4925 23.2834 19.3346 22.5364 19.9373 21.5461C20.54 20.5558 20.8744 19.3694 20.8958 18.1461C21.8299 17.5575 22.6119 16.6763 23.1575 15.5974C23.7031 14.5184 23.9918 13.2824 23.9924 12.0224ZM8.12195 21.2552C7.53729 21.2551 6.96833 21.0295 6.50003 20.612C6.03174 20.1946 5.68923 19.6077 5.52364 18.9389C5.62041 18.9389 5.70654 18.947 5.79944 18.947H6.57361C6.88159 18.947 7.17696 18.8011 7.39474 18.5414C7.61252 18.2817 7.73486 17.9294 7.73486 17.5621C7.73486 17.1948 7.61252 16.8425 7.39474 16.5828C7.17696 16.3231 6.88159 16.1772 6.57361 16.1772H5.79944C4.9772 16.1779 4.18126 15.8317 3.55244 15.1999C2.92361 14.5681 2.50242 13.6914 2.3634 12.7249C2.22438 11.7584 2.37647 10.7645 2.79278 9.91883C3.20909 9.07321 3.86277 8.43045 4.63819 8.10427C4.86469 8.00876 5.06078 7.83182 5.19944 7.59784C5.33809 7.36386 5.41248 7.08435 5.41235 6.79783V6.02112C5.41235 5.16408 5.69783 4.34214 6.20598 3.73612C6.71412 3.13011 7.40332 2.78965 8.12195 2.78965C8.84058 2.78965 9.52977 3.13011 10.0379 3.73612C10.5461 4.34214 10.8315 5.16408 10.8315 6.02112V12.9665C10.6095 12.7967 10.3765 12.6481 10.1348 12.5222C9.85247 12.3752 9.53278 12.3681 9.24604 12.5023C8.9593 12.6365 8.729 12.901 8.60581 13.2377C8.48261 13.5744 8.47662 13.9557 8.58913 14.2976C8.70165 14.6396 8.92347 14.9142 9.20579 15.0612C9.77677 15.3578 10.2446 15.88 10.5306 16.5398C10.8166 17.1996 10.9033 17.9568 10.7761 18.6839C10.6489 19.411 10.3155 20.0636 9.83208 20.5319C9.34868 21.0002 8.74475 21.2557 8.12195 21.2552ZM18.1862 16.1772H17.412C17.104 16.1772 16.8086 16.3231 16.5909 16.5828C16.3731 16.8425 16.2507 17.1948 16.2507 17.5621C16.2507 17.9294 16.3731 18.2817 16.5909 18.5414C16.8086 18.8011 17.104 18.947 17.412 18.947H18.1862C18.2829 18.947 18.37 18.947 18.462 18.9389C18.333 19.4603 18.0958 19.9345 17.7723 20.3175C17.4489 20.7006 17.0497 20.9801 16.6116 21.1302C16.1735 21.2804 15.7107 21.2963 15.2661 21.1766C14.8215 21.0568 14.4094 20.8052 14.068 20.445C13.7265 20.0849 13.4668 19.6278 13.3128 19.1162C13.1588 18.6045 13.1156 18.0548 13.187 17.5179C13.2585 16.981 13.4423 16.4743 13.7216 16.0447C14.0009 15.6151 14.3665 15.2764 14.7846 15.06C15.067 14.9131 15.2888 14.6384 15.4013 14.2965C15.5138 13.9545 15.5078 13.5732 15.3846 13.2365C15.2614 12.8998 15.0311 12.6353 14.7444 12.5011C14.4577 12.3669 14.138 12.3741 13.8556 12.521C13.6139 12.6469 13.3809 12.7955 13.1589 12.9653V6.02112C13.1589 5.16408 13.4444 4.34214 13.9525 3.73612C14.4607 3.13011 15.1499 2.78965 15.8685 2.78965C16.5871 2.78965 17.2763 3.13011 17.7845 3.73612C18.2926 4.34214 18.5781 5.16408 18.5781 6.02112V6.79783C18.578 7.08435 18.6523 7.36386 18.791 7.59784C18.9297 7.83182 19.1257 8.00876 19.3523 8.10427C20.1311 8.4275 20.7886 9.06979 21.2077 9.91686C21.6268 10.7639 21.7804 11.7608 21.641 12.7302C21.5017 13.6996 21.0785 14.5787 20.4467 15.2109C19.815 15.8431 19.0157 16.1876 18.191 16.183L18.1862 16.1772ZM19.7345 11.0992C19.7345 11.4665 19.6122 11.8187 19.3944 12.0784C19.1766 12.3382 18.8812 12.4841 18.5732 12.4841C17.5466 12.4841 16.5621 11.9977 15.8361 11.132C15.1102 10.2662 14.7024 9.09202 14.7024 7.86768V7.40604C14.7024 7.03873 14.8247 6.68648 15.0425 6.42675C15.2603 6.16703 15.5557 6.02112 15.8636 6.02112C16.1716 6.02112 16.467 6.16703 16.6848 6.42675C16.9026 6.68648 17.0249 7.03873 17.0249 7.40604V7.86768C17.0249 8.35741 17.188 8.82709 17.4784 9.17339C17.7688 9.51969 18.1626 9.71423 18.5732 9.71423C18.8812 9.71423 19.1766 9.86014 19.3944 10.1199C19.6122 10.3796 19.7345 10.7318 19.7345 11.0992ZM9.2832 7.86768C9.2832 9.09202 8.87538 10.2662 8.14946 11.132C7.42353 11.9977 6.43897 12.4841 5.41235 12.4841C5.10437 12.4841 4.809 12.3382 4.59122 12.0784C4.37345 11.8187 4.2511 11.4665 4.2511 11.0992C4.2511 10.7318 4.37345 10.3796 4.59122 10.1199C4.809 9.86014 5.10437 9.71423 5.41235 9.71423C5.823 9.71423 6.21683 9.51969 6.5072 9.17339C6.79757 8.82709 6.9607 8.35741 6.9607 7.86768V7.40604C6.9607 7.03873 7.08304 6.68648 7.30082 6.42675C7.5186 6.16703 7.81397 6.02112 8.12195 6.02112C8.42993 6.02112 8.7253 6.16703 8.94308 6.42675C9.16086 6.68648 9.2832 7.03873 9.2832 7.40604V7.86768Z" fill="grey"/>
+                    </svg> Skills</a></li>
+                <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z" fill="grey"/>
+                    </svg>Contacts</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="hideOnMobile">Portfolio</a></li>
+                <li><a href="#first-page" class="hideOnMobile">Home</a></li>
+                <li><a href="#second-page" class="hideOnMobile">About me</a></li>
+                <li><a href="#third-page" class="hideOnMobile">Goat</a></li>
+                <li><a href="#" class="hideOnMobile">Achievement</a></li>
+                <li><a href="#" class="hideOnMobile">Skills</a></li>
+                <li><a href="#" class="hideOnMobile">Contacts</a></li>  
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#4B81AB"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav> 
+        <div class="home-page-fonts-position" >
+            <div class="home-page-fonts1">
+             <div class="home-page-fonts2">
+              <h2>Hello,I'm</h2>
+              <h1 style="color: #4B1ED1;">Nurlanov Ulanbek</h1>
+              <h2>Student of Tokmok High School</h2>
+             </div>
+            </div>
+            <div class="img-container">
+                <img src="Rectangle 3 (1).png" alt="" class="circle">
+                <img src="my-photo.png" alt="" class="person-img">
+            </div>
+        </div>
+    </div>        
+
+   <div class="second-page" id="second-page">
+    <div class="title">
+        <h1 style="color: #ffffff; transform: translateY(30px);">My Biography</h1>
+    </div>
+    <div class="timeline">
+        <div class="checkpoint">
+            <div>
+                <h2>Day 1:Helsinki, Finland</h2>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. 
+                    Exercitationem repellat, 
+                    debitis corporis porro nulla 
+                </p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>Day 2:Berlin, German</h2>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. 
+                    Exercitationem repellat, 
+                    debitis corporis porro nulla 
+                </p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>Day 3:Moscow, Russia</h2>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. 
+                    Exercitationem repellat, 
+                    debitis corporis porro nulla 
+                </p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>Day 4:Bishkek, Kyrgyzstan</h2>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. 
+                    Exercitationem repellat, 
+                    debitis corporis porro nulla 
+                </p>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+   <div class="third-page" id="third-page">
+    <div class="section">
+        <div class="title">
+            <h1 style="color: #ffffff;">Goat</h1>
+        </div>
+        <div class="goats">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <h2>Planning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id beatae aliquid
+                   eligendi optio eveniet inventore iste possimus at doloremque commodi. Soluta 
+                   quos enim ipsa natus nobis veritatis incidunt sapiente vel.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <h2>Planning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id beatae aliquid
+                   eligendi optio eveniet inventore iste possimus at doloremque commodi. Soluta 
+                   quos enim ipsa natus nobis veritatis incidunt sapiente vel.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-comments-dollar"></i>
+                </div>
+                <h2>Planning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id beatae aliquid
+                   eligendi optio eveniet inventore iste possimus at doloremque commodi. Soluta 
+                   quos enim ipsa natus nobis veritatis incidunt sapiente vel.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <script src="https://kit.fontawesome.com/2e852564f6.js" crossorigin="anonymous"></script>
+   
+  
+</body>
+</html>
